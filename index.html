@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/jdropwords.js"></script>
+    <script>
+        $(function(){
+            $('.jdropwords').jDropWords({
+                answers : "http://webserver.local/activities/jdropwords/answers.json"
+                /*answers : {
+                 "123-456-789" : "123-456-780",
+                 "223-456-789" : "223-456-780",
+                 "323-456-789" : "323-456-780",
+                 "423-456-789" : "423-456-780"
+                 }*/
+            });
+        });
+    </script>
+    <link type="text/css" rel="stylesheet" href="css/jdropwords.css" media="all" />
+</head>
+<body>
+<h1>Fill the blanks</h1>
+    <div class="jdropwords">
+        <div class="blanks">
+            <p>bonjour, je m'<span class="blank" id="123-456-789"></span> Christian</p>
+            <p><span class="blank" id="223-456-789"></span> ca va ?</p>
+            <p>Tu <span class="blank" id="323-456-789"></span> où ?</p>
+            <p>J'<span class="blank" id="423-456-789"></span> à Marseille, mais j'<span class="blank" id="523-456-789"></span> à Paris.</p>
+        </div>
+        <ul class="words">
+            <li class="word" id="123-456-780">appelle</li>
+            <li class="word" id="223-456-780">Comment</li>
+            <li class="word" id="323-456-780">habites</li>
+            <li class="word" id="423-456-780">habite</li>
+            <li class="word" id="523-456-780">étudie</li>
+        </ul>
+        <div class="actions">
+            <a href="#" class="button reset">Reset</a>
+            <a href="#" class="button submit">Submit</a>
+        </div>
+
+    </div>
+</body>
+</html>
