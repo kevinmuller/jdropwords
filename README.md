@@ -17,10 +17,12 @@
 ```
 ==========
 
-JDropWords V-0.1
+### JDropWords V-0.1
 
 JDropWords is a word game written in jQuery. You have to drag and drop the correct words to fill the blanks. The answer of the game is given through a json object, either retrieved through an ajax call, or given at the instantiation.
 This plugin requires a copy of jQuery.
+
+See a demo : http://www.enova-tech.net/jdropwords
 
 
 ### How do I install JDropWords ?
